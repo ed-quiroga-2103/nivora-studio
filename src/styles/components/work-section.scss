@@ -1,0 +1,42 @@
+.work-section {
+  margin: 12rem 1rem;
+
+  .title,
+  .subtitle {
+    margin: 0;
+    padding: 0;
+  }
+
+  .underline {
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+
+  .accent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .text {
+      margin: 0 10rem;
+      max-width: 25rem;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+
+    margin: 2rem 0;
+
+    .card {
+      width: 30%;
+
+      .title {
+      }
+      .description {
+      }
+    }
+  }
+}

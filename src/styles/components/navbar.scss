@@ -1,0 +1,43 @@
+.navbar {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+
+  background-color: $bg-primary;
+
+  box-shadow: 0px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    width: 25%;
+    color: $text-primary;
+    text-decoration: none;
+
+    .link {
+      color: $text-primary;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .links {
+    width: 40%;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    .link {
+      color: $text-primary;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

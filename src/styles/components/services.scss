@@ -1,0 +1,44 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+
+  .service-card {
+    max-width: 30%;
+    margin: 0 2rem;
+
+    .service-description {
+      text-align: left;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.services {
+  margin: 12rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  ul {
+    padding: 0 0 0 1rem;
+  }
+}
+
+.card-separator {
+  width: 5% !important;
+  padding: 0;
+  margin: 0;
+  .line {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "en": {
+    "contact": {
+      "headline": "Get in Touch",
+      "body": "Ready to start your project? Reach out to discuss your ideas and see how we can help bring them to life.",
+      "components": {
+        "contactForm": {
+          "name": "Name",
+          "email": "Email",
+          "message": "Message",
+          "messagePlaceholder": "Tell us who you are and what your project is about",
+          "submit": "Send Message"
+        }
+      }
+    },
+    "hero": {
+      "headline": "Code. Design. Growth.",
+      "subheadline": "Digital products crafted with care.",
+      "accent": "We design and develop software that works seamlessly, solves real problems, and moves companies forward."
+    },
+    "value": {
+      "headline": "Ideas into experiences.",
+      "body": "No noise, just clear and effective technology."
+    },
+    "cta": {
+      "button": "Work with us."
+    },
+    "sections": {
+      "whatWeDo": {
+        "headline": "What We Do",
+        "body": "Our focus is results. We design and develop software that works seamlessly, solves real problems, and moves companies forward."
+      },
+      "services": {
+        "headline": "Our Services",
+        "items": [
+          "Web Applications — Modern platforms built for speed and security.",
+          "Mobile Solutions — Cross-platform apps with performance in mind.",
+          "System Integration — Connecting tools and workflows seamlessly.",
+          "Maintenance & Support — Ensuring your product keeps delivering results."
+        ]
+      },
+      "approach": {
+        "headline": "How We Work",
+        "body": "Our approach is straightforward: listen, design, build, refine. A process that delivers technology you can trust, and results you can measure."
+      }
+    },
+    "ourWork": {
+      "headline": "Our Work",
+      "body": "A showcase of projects that highlight our commitment to quality and innovation."
+    },
+    "services": {
+      "build": {
+        "title": "Build",
+        "body": "From sleek websites to powerful mobile apps, we design and develop platforms tailored to your goals. Whether it’s an online store, a subscription product, or an MVP, we turn your ideas into digital reality."
+      },
+      "fixSupport": {
+        "title": "Fix & Support",
+        "body": "Many projects fall short due to rushed or careless code. We specialize in rescuing broken systems, improving performance, and providing ongoing support so your product stays secure, reliable, and ready to grow."
+      },
+      "integrateGrow": {
+        "title": "Integrate & Grow",
+        "body": "Technology works best when it’s connected. We integrate tools, automate workflows, and enhance user experience with analytics, cloud solutions, and smart features that scale with your business."
+      }
+    }
+  },
+  "es": {
+    "contact": {
+      "headline": "Ponte en Contacto",
+      "body": "¿Es hora de comenzar tu proyecto? Contactanos para discutir cómo hacer tus ideas realidad.",
+      "components": {
+        "contactForm": {
+          "name": "Nombre",
+          "email": "Email",
+          "message": "Mensaje",
+          "messagePlaceholder": "Cuentanos quién eres y cuál es tu proyecto",
+          "submit": "Enviar"
+        }
+      }
+    },
+    "hero": {
+      "headline": "Diseño mínimo. Impacto máximo.",
+      "subheadline": "Productos digitales creados con precisión.",
+      "accent": "Diseñamos y desarrollamos software que funciona sin fricciones, resuelve problemas reales y hace avanzar a las empresas."
+    },
+    "value": {
+      "headline": "Tu negocio, impulsado por código.",
+      "body": "Creamos herramientas que te hacen avanzar."
+    },
+    "cta": {
+      "button": "Trabaja con nosotros."
+    },
+    "sections": {
+      "whatWeDo": {
+        "headline": "Lo que hacemos",
+        "body": "Nuestro enfoque son los resultados. Diseñamos y desarrollamos software que funciona sin fricciones, resuelve problemas reales y hace avanzar a las empresas."
+      },
+      "services": {
+        "headline": "Nuestros servicios",
+        "items": [
+          "Aplicaciones Web — Plataformas modernas creadas para velocidad y seguridad.",
+          "Soluciones Móviles — Apps multiplataforma diseñadas con rendimiento en mente.",
+          "Integración de Sistemas — Conectamos herramientas y flujos de trabajo sin fricciones.",
+          "Mantenimiento y Soporte — Garantizamos que tu producto siga generando resultados."
+        ]
+      },
+      "approach": {
+        "headline": "Cómo trabajamos",
+        "body": "Nuestro proceso es directo: escuchar, diseñar, construir, perfeccionar. Así entregamos tecnología confiable y resultados medibles."
+      }
+    },
+    "ourWork": {
+      "headline": "Nuestro trabajo",
+      "body": "Una muestra de proyectos que destacan nuestro compromiso con la calidad y la innovación."
+    },
+    "services": {
+      "build": {
+        "title": "Crear",
+        "body": "Diseñamos y desarrollamos soluciones digitales a la medida: desde páginas web modernas hasta aplicaciones móviles robustas. Comercio electrónico, plataformas de suscripción o un primer prototipo, transformamos tu idea en un producto real."
+      },
+      "fixSupport": {
+        "title": "Reparar y Acompañar",
+        "body": "Sabemos lo que pasa cuando un proyecto fue mal construido. Rescatamos sistemas defectuosos, optimizamos su rendimiento y ofrecemos soporte continuo para que tu producto sea seguro, estable y confiable a largo plazo."
+      },
+      "integrateGrow": {
+        "title": "Integrar y Crecer",
+        "body": "La tecnología funciona mejor cuando todo está conectado. Integramos herramientas, automatizamos procesos y mejoramos la experiencia del usuario con análisis, soluciones en la nube y funciones inteligentes que escalan contigo."
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.separator {
+  --sep-thickness: 1px;
+  --sep-color: currentColor;
+  --sep-length: 100%;
+  --sep-gap: 1rem;
+  margin-block: var(--sep-gap);
+  color: var(--sep-color);
+}
+
+/* ---------- Horizontal ---------- */
+.horizontal {
+  width: var(--sep-length);
+  border: 0;
+}
+
+.solid.horizontal {
+  height: 0;
+  border-top: var(--sep-thickness) solid var(--sep-color);
+}
+
+.dashed.horizontal {
+  height: 0;
+  border-top: var(--sep-thickness) dashed var(--sep-color);
+}
+
+.dotted.horizontal {
+  height: 0;
+  border-top: var(--sep-thickness) dotted var(--sep-color);
+}
+
+.gradient.horizontal {
+  height: var(--sep-thickness);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--sep-color),
+    transparent
+  );
+}
+
+/* Horizontal with label */
+.withLabel {
+  display: grid;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-block: var(--sep-gap);
+}
+
+.alignStart {
+  grid-template-columns: auto auto 1fr;
+}
+.alignCenter {
+  grid-template-columns: 1fr auto 1fr;
+}
+.alignEnd {
+  grid-template-columns: 1fr auto auto;
+}
+
+.withLabel .label {
+  white-space: nowrap;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* The lines on each side of the label */
+.withLabel::before,
+.withLabel::after {
+  content: "";
+  height: 0;
+}
+
+.solid.withLabel::before,
+.solid.withLabel::after {
+  border-top: var(--sep-thickness) solid var(--sep-color);
+}
+
+.dashed.withLabel::before,
+.dashed.withLabel::after {
+  border-top: var(--sep-thickness) dashed var(--sep-color);
+}
+
+.dotted.withLabel::before,
+.dotted.withLabel::after {
+  border-top: var(--sep-thickness) dotted var(--sep-color);
+}
+
+.gradient.withLabel::before,
+.gradient.withLabel::after {
+  height: var(--sep-thickness);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--sep-color),
+    transparent
+  );
+}
+
+/* Make left/right gradients point away from the label nicely */
+.gradient.withLabel::before {
+  background: linear-gradient(to left, transparent, var(--sep-color));
+}
+.gradient.withLabel::after {
+  background: linear-gradient(to right, transparent, var(--sep-color));
+}
+
+/* ---------- Vertical ---------- */
+.vertical {
+  width: var(--sep-thickness);
+  height: var(--sep-length);
+}
+
+/* solid vertical */
+.solid.vertical {
+  background: var(--sep-color);
+}
+
+/* dashed/dotted vertical via repeating gradients */
+.dashed.vertical {
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--sep-color),
+    var(--sep-color) calc(var(--sep-thickness) * 1),
+    transparent calc(var(--sep-thickness) * 1),
+    transparent calc(var(--sep-thickness) * 3)
+  );
+}
+
+.dotted.vertical {
+  background: radial-gradient(
+      circle at 50% 0,
+      var(--sep-color) 25%,
+      transparent 26%
+    )
+    top/100% calc(var(--sep-thickness) * 3) repeat-y;
+}
+
+/* vertical gradient */
+.gradient.vertical {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--sep-color),
+    transparent
+  );
+}

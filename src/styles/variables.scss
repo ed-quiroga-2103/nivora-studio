@@ -1,0 +1,43 @@
+// ==========================
+// PALETTE
+// ==========================
+
+// ========== 🎨 BACKGROUNDS ==========
+$bg-primary: #fdf7e4; // Cream Lightest
+$bg-secondary: #faeed1; // Cream Light
+$bg-tertiary: #ded0b6; // Beige Muted
+$bg-inverse: #bbab8c; // Taupe Deep
+
+// ========== 🎨 FOREGROUNDS ==========
+$fg-primary: #bbab8c; // Taupe Deep
+$fg-secondary: #ded0b6; // Beige Muted
+$fg-inverse: #fdf7e4; // Cream Lightest (on dark bg)
+
+// ========== 📝 TEXT ==========
+$text-primary: #3b332a; // Strong contrast on light
+$text-secondary: #6b5e4e; // Softer text tone
+$text-muted: #8a7e6c; // For placeholders, captions
+$text-inverse: #f7f1e4; // Light text on dark backgrounds
+
+// ========== 🧱 BORDERS ==========
+$border-light: #f1e9d3;
+$border-neutral: #c9ba9e;
+$border-dark: #a89b80;
+
+// ========== 🌟 ACCENTS ==========
+$accent-primary: #f5dfb1; // From Cream Light
+$accent-secondary: #e4d4bd; // From Beige Muted
+$accent-tertiary: #c8bba2; // From Taupe Deep
+
+// ========== 🎯 HOVER STATES ==========
+$hover-light: #f9f0da;
+$hover-neutral: #f1e3c4;
+$hover-warm: #d5c5aa;
+$hover-dark: #a99b7d;
+
+// ==========================
+// TEXT & ROLES
+// ==========================
+
+$font-heading: "Playfair Display", serif;
+$font-body: "Inter", sans-serif;
