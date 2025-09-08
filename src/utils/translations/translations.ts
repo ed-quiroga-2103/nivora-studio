@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 type Locale = "en" | "es";
 
 import translationsJson from "./translations.json";

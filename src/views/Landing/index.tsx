@@ -2,7 +2,6 @@ import React from "react";
 import Separator from "@/components/Separator"; // Basic
 import HeroSection from "./HeroSection";
 import Services from "./Services";
-import Image from "next/image";
 import OurWork from "./OurWork";
 import Contact from "./Contact";
 // import { motion } from "framer-motion";

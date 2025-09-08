@@ -1,5 +1,5 @@
-@import "./navbar.scss";
-@import "./hero-section.scss";
-@import "../variables.scss";
-@import "./services.scss";
-@import "./work-section.scss";
+@use "../variables.scss" as *;
+@use "./navbar.scss" as *;
+@use "./hero-section.scss" as *;
+@use "./services.scss" as *;
+@use "./work-section.scss" as *;

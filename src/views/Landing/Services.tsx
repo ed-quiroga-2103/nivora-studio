@@ -44,7 +44,7 @@ const renderCards = () => {
   const results: React.JSX.Element[] = [];
   let itemsCard;
 
-  for (const [key, section] of Object.entries(sections)) {
+  for (const [_, section] of Object.entries(sections)) {
     if (section.items) {
       itemsCard = <ItemsCard title={section.headline} items={section.items} />;
     } else if (section.body) {
@@ -62,7 +62,7 @@ const renderCards = () => {
 };
 
 export default function Services() {
-  const [cards, items] = renderCards();
+  const [cards, _] = renderCards();
   return (
     <div className="services">
       <div className="cards">{cards}</div>
