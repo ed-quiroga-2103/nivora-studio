@@ -2,7 +2,7 @@
   "en": {
     "contact": {
       "headline": "Get in Touch",
-      "body": "Ready to start your project? Reach out to discuss your ideas and see how we can help bring them to life.",
+      "body": "We’re ready when you are. From early concepts to fully launched products, we guide projects through every stage of the journey. Our approach is collaborative, transparent, and focused on what really matters: building tools that help your business grow. Reach out, and let’s explore what we can create together.",
       "components": {
         "contactForm": {
           "name": "Name",
@@ -66,17 +66,18 @@
   "es": {
     "contact": {
       "headline": "Ponte en Contacto",
-      "body": "¿Es hora de comenzar tu proyecto? Contactanos para discutir cómo hacer tus ideas realidad.",
+      "body": "Todo proyecto empieza con una buena conversación. Contanos tu visión, tus dudas o tus metas, y veamos juntos cómo podemos convertirlas en soluciones digitales reales. Nuestro trabajo empieza por escucharte, entender tus necesidades y ayudarte a tomar decisiones claras. Estás a un mensaje de comenzar algo importante.",
       "components": {
         "contactForm": {
           "name": "Nombre",
           "email": "Email",
           "message": "Mensaje",
-          "messagePlaceholder": "Cuentanos quién eres y cuál es tu proyecto",
+          "messagePlaceholder": "Cuéntanos quién eres y cuál es tu proyecto",
           "submit": "Enviar"
         }
       }
     },
+
     "hero": {
       "headline": "Diseño mínimo. Impacto máximo.",
       "subheadline": "Productos digitales creados con precisión.",

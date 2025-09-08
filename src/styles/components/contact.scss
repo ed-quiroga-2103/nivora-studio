@@ -1,0 +1,69 @@
+@use "../variables.scss" as *;
+
+.form-container {
+  margin: 12rem 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.message {
+  width: 50%;
+  margin: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+
+  gap: 1rem;
+
+  margin: 2rem;
+
+  .name-input {
+    background-color: $bg-primary;
+    text-decoration: none;
+    border: none;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+
+    font-family: $font-body;
+  }
+  .email-input {
+    background-color: $bg-primary;
+    text-decoration: none;
+    border: none;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+
+    font-family: $font-body;
+  }
+  .message-input {
+    background-color: $bg-primary;
+    text-decoration: none;
+    border: none;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+
+    font-family: $font-body;
+  }
+  .submit-button {
+    font-family: $font-body;
+    background-color: $fg-primary;
+    border: none;
+    width: 10%;
+    border-radius: 5px;
+    color: $text-primary;
+    padding: 0.5rem;
+  }
+
+  .submit-button:hover {
+    background-color: $hover-warm;
+    cursor: pointer;
+  }
+}
