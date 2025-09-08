@@ -27,8 +27,8 @@ export async function handleContactForm(formData: FormData) {
   }
 
   await resend.emails.send({
-    from: "Website Contact <contact@yourdomain.com>",
-    to: ["you@yourdomain.com"],
+    from: "Business Contact <contact@nivora.studio>",
+    to: ["nivora.dev@gmail.com"],
     subject: "New Contact Form Submission",
     html: `<strong>Name:</strong> ${name}<br/><strong>Email:</strong> ${email}<br/><strong>Message:</strong><br/>${message}`,
   });
