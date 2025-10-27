@@ -26,10 +26,12 @@ export async function handleContactForm(formData: FormData) {
     throw new Error("Missing fields");
   }
 
-  await resend.emails.send({
-    from: "Business Contact <contact@nivora.studio>",
+  const response = await resend.emails.send({
+    from: "Business Contact <contact@business.nivora.studio>",
     to: ["nivora.dev@gmail.com"],
-    subject: "New Contact Form Submission",
+    subject: `New Contact Form Submission - ${name}`,
     html: `<strong>Name:</strong> ${name}<br/><strong>Email:</strong> ${email}<br/><strong>Message:</strong><br/>${message}`,
   });
+
+  console.log(response);
 }

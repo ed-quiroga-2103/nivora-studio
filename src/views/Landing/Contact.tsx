@@ -1,29 +1,41 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { handleContactForm } from "@/actions/contact";
 import Separator from "@/components/Separator";
 import { t } from "@/utils/translations/translations";
 
 declare const grecaptcha: {
-  execute(siteKey: string, options: { action: string }): Promise<string>;
+  enterprise: {
+    ready: (cb: () => void) => void;
+    execute: (siteKey: string, options: { action: string }) => Promise<string>;
+  };
 };
 
-declare global {
-  interface Window {
-    grecaptcha: {
-      ready: (cb: () => void) => void;
-      execute: (
-        siteKey: string,
-        options: { action: string }
-      ) => Promise<string>;
-    };
-  }
-}
-
 export default function ContactPage() {
+  console.log(
+    "RECAPTCHA SITE KEY:",
+    process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+  );
+
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState("");
+
+  useEffect(() => {
+    const checkRecaptcha = () => {
+      if (grecaptcha.enterprise && grecaptcha.enterprise.ready) {
+        console.log("✅ reCAPTCHA script loaded and ready!", grecaptcha);
+        grecaptcha.enterprise.ready(() =>
+          console.log("✅ grecaptcha.ready() triggered")
+        );
+      } else {
+        console.log("⏳ reCAPTCHA not yet loaded...");
+        setTimeout(checkRecaptcha, 500);
+      }
+    };
+
+    checkRecaptcha();
+  }, []);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -32,15 +44,15 @@ export default function ContactPage() {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    if (!window.grecaptcha) {
+    if (!grecaptcha.enterprise) {
       setStatus("reCAPTCHA failed to load");
       return;
     }
 
-    window.grecaptcha.ready(async () => {
+    grecaptcha.enterprise.ready(async () => {
       try {
-        const token = await window.grecaptcha.execute(
-          process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!,
+        const token = await grecaptcha.enterprise.execute(
+          process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "",
           { action: "submit" }
         );
 
@@ -50,6 +62,7 @@ export default function ContactPage() {
         form.reset();
         setStatus("Message sent!");
       } catch (err) {
+        console.log(err);
         console.error("reCAPTCHA or submission error:", err);
         setStatus("Failed to send message.");
       }
@@ -94,7 +107,7 @@ export default function ContactPage() {
             hidden
           />
 
-          <button type="submit" className="submit-button" disabled>
+          <button type="submit" className="submit-button">
             Send
           </button>
 
