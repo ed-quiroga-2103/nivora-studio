@@ -17,7 +17,9 @@ async function createAssessment({
 }) {
   // Create the reCAPTCHA client.
   // TODO: Cache the client generation code (recommended) or call client.close() before exiting the method.
-  const client = new RecaptchaEnterpriseServiceClient();
+  const client = new RecaptchaEnterpriseServiceClient({
+    apiKey: process.env.GOOGLE_API_KEY || "",
+  });
   const projectPath = client.projectPath(projectID);
 
   // Build the assessment request.
